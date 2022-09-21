@@ -3,7 +3,6 @@ from asyncio.windows_events import NULL
 from operator import contains
 import string
 from urllib import response
-from googlesearch import search
 from tkinter import Y
 from bs4 import BeautifulSoup
 import requests
@@ -35,5 +34,5 @@ def username_find(name: string):
     # for link in soup.find_all('a', href = True):
     #     print(link.get('href'))
 
-x = input("user name goes here: ") #this is to get sample output, remove this line and pass parameter in API
-username_find(x)
+# x = input("user name goes here: ") #this is to get sample output, remove this line and pass parameter in API
+# username_find(x)

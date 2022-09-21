@@ -25,5 +25,5 @@ def website_details(website_name):#the website name must be  WITHOUR .com
         for det in urls:
             print(det.get('href')) 
 
-webdemo = input("enter website name: ") #this is to get sample output, remove this line and pass parameter in API
-website_details(webdemo)
+# webdemo = input("enter website name: ") #this is to get sample output, remove this line and pass parameter in API
+# website_details(webdemo)

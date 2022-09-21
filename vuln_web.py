@@ -25,4 +25,4 @@ def vuln_data():#no parameter, once user clicks the general vulnerable urls prin
         for det in urls:
             print(det.get('href'))
 
-vuln_data() #this is to get sample output, remove this function call and pass parameter in API
+# vuln_data() #this is to get sample output, remove this function call and pass parameter in API

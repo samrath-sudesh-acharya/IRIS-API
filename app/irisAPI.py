@@ -1,8 +1,4 @@
-from cgitb import text
 from fastapi import FastAPI
-from username import username_find
-from vuln_web import vuln_data
-from website import website_details
 import bs4 
 from fastapi.middleware.cors import CORSMiddleware
 import requests

@@ -12,6 +12,10 @@ import json
 app = FastAPI()
 
 
+@app.get('/')
+def index():
+     return "Welcome to IRSIS"
+
 @app.get("/username={name}")
 def username_find(name: str):
     data = []

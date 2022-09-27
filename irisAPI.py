@@ -27,8 +27,10 @@ def username_find(name: str):
         page = requests.get(url) #runs the query on google
         soup = BeautifulSoup(page.text, 'html.parser')
         heading_object=soup.find_all( 'h3' )
-        # link = soup.find_all('a')
-        # print("\nRelated searches for"+i+": \n")
+        link = soup.find_all('a',href=True)
+        for i in link :
+            print(i)
+        print(link)
         for info in heading_object:
             # print(info.getText())
             data.append({"site":i,"info":info.getText()})
